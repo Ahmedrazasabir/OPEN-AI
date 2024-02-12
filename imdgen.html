@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt engineering</title>
+</head>
+
+<body>
+
+
+
+    <!doctype html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                    <img src="images/logo_2-removebg-preview.png" alt="" width="50px">
+                    <span class="ml-3 text-xl">Image generation</span>
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:text-white" href="index.html">Home</a>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                    src="images/gen.png">
+                <div class="text-center lg:w-2/3 w-full">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Image generation</h1>
+                    <p class="leading-relaxed mb-8">This guide shares strategies and tactics for getting better results
+                        The Images API provides three methods for interacting with images: <br>
+
+                        Creating images from scratch based on a text prompt (DALL·E 3 and DALL·E 2) <br>
+                        Creating edited versions of images by having the model replace some areas of a pre-existing <br>
+                        image, based on a new text prompt (DALL·E 2 only) <br>
+                        Creating variations of an existing image (DALL·E 2 only) <br>
+                        This guide covers the basics of using these three API endpoints with useful code samples. To try
+                        <br>
+                        DALL·E 3, head to ChatGPT. To try DALL·E 2, check out the DALL·E preview app. <br>
+                    </p>
+                </div>
+            </div>
+
+            <h1 style="font-size: 22px; padding-left: 25px; color: white;">Generative Adversarial Networks (GANs): </h1>
+            <p style="padding-left: 25px; "> GANs consist of two neural networks, a generator and a discriminator,
+                trained simultaneously in a competitive setting. The generator learns to generate realistic images from
+                random noise, while the discriminator learns to distinguish between real images and fake ones generated
+                by the generator. Through this adversarial process, GANs can produce high-quality, diverse images across
+                various domains.</p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Variational Autoencoders
+                (VAEs):</h1>
+            <p style="padding-left: 25px;">VAEs are generative models that learn to encode input images into a
+                lower-dimensional latent space and decode them back into images. By sampling from the learned latent
+                space, VAEs can generate new images that resemble the training data while exploring variations in the
+                data distribution.</p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Autoregressive Models:
+            </h1>
+            <p style="padding-left: 25px;">Autoregressive models, such as PixelCNN and PixelRNN, generate images pixel
+                by pixel, conditioning each pixel's probability distribution on previously generated pixels. These
+                models generate images sequentially, often achieving high-quality results but at the cost of slower
+                generation times.</p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Style Transfer:</h1>
+            <p style="padding-left: 25px; padding-bottom: 30px;"> Style transfer techniques enable the generation of new images by combining
+                the content of one image with the style of another. These methods can be used to create artistic or
+                visually appealing images by transferring the style characteristics of reference images onto target
+                images.
+
+            </p>
+        </section>
+
+
+        <footer class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <img src="images/logo_2-removebg-preview.png" alt="" width="18%">
+                    <span class="ml-3 text-xl">OPEN AI</span>
+                </a>
+                <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                    <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+                        rel="noopener noreferrer"></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-400" href="https://www.facebook.com/profile.php?id=100089696840410"
+                        target="_blank">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.instagram.com/ahmed5800raza/" target="_blank">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/ahmed-raza-a9a8372a5/"
+                        target="_blank">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>

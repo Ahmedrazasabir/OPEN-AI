@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt engineering</title>
+</head>
+
+<body>
+
+
+
+    <!doctype html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <header class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                    <img src="images/logo_2-removebg-preview.png" alt="" width="50px">
+                    <span class="ml-3 text-xl">Fine-tuning</span>
+                </a>
+                <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                    <a class="mr-5 hover:text-white" href="index.html">Home</a>
+
+                </nav>
+
+            </div>
+        </header>
+
+        <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+                <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero"
+                    src="images/fine.png">
+                <div class="text-center lg:w-2/3 w-full">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Fine-tuning</h1>
+                    <p class="leading-relaxed mb-8">Fine-tuning lets you get more out of the models available through
+                        the API by providing: <br>
+
+                        Higher quality results than prompting <br>
+                        Ability to train on more examples than can fit in a prompt <br>
+                        Token savings due to shorter prompts <br>
+                        Lower latency requests <br>
+                        OpenAI's text generation models have been pre-trained on a vast amount of text. To use the <br>
+                        models effectively, we include instructions and sometimes several examples in a prompt. Using
+                        <br>
+                        demonstrations to show how to perform a task is often called "few-shot learning." <br>
+
+                        Fine-tuning improves on few-shot learning by training on many more examples than can fit in the
+                        <br>
+                        prompt, letting you achieve better results on a wide number of tasks. Once a model has been <br>
+                        fine-tuned, you won't need to provide as many examples in the prompt. This saves costs and <br>
+                        enables lower-latency requests. <br>
+                    </p>
+                </div>
+            </div>
+
+            <h1 style="font-size: 22px; padding-left: 25px; color: white;">Pre-trained Model: </h1>
+            <p style="padding-left: 25px; "> Start with a pre-trained model that has been trained on a large dataset for
+                a general task, such as image classification or natural language understanding. These pre-trained models
+                have already learned useful features and representations from the data they were trained on.
+
+            </p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Task-specific Data:</h1>
+            <p style="padding-left: 25px;">Gather a dataset specific to the task you want to solve. This dataset should
+                be related to the pre-trained model's original task but may have different characteristics or
+                requirements.</p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Modification of the Model:
+            </h1>
+            <p style="padding-left: 25px;">Modify the pre-trained model to adapt it to the new task. This typically
+                involves replacing or adding layers at the end of the pre-trained model to match the desired output
+                format or task requirements. For example, in image classification, you might replace the final
+                classification layer with a new set of output classes for a different classification task.</p>
+            <h1 style="font-size: 22px; padding-left: 25px; color: white; padding-top: 15px;">Fine-tuning: </h1>
+            <p style="padding-left: 25px; padding-bottom: 30px;">Train the modified model on the task-specific dataset. During training, the
+                weights of the pre-trained layers are adjusted based on the new data, while the weights of the added or
+                modified layers are initialized randomly and updated during training.
+
+
+
+            </p>
+        </section>
+
+
+        <footer class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <img src="images/logo_2-removebg-preview.png" alt="" width="18%">
+                    <span class="ml-3 text-xl">OPEN AI</span>
+                </a>
+                <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                    <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank"
+                        rel="noopener noreferrer"></a>
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                    <a class="text-gray-400" href="https://www.facebook.com/profile.php?id=100089696840410"
+                        target="_blank">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.instagram.com/ahmed5800raza/" target="_blank">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-400" href="https://www.linkedin.com/in/ahmed-raza-a9a8372a5/"
+                        target="_blank">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+
+
+
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>
